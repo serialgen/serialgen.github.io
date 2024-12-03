@@ -1,1 +1,364 @@
-<h1>Project page for SerialGen. Coming soon!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <!-- 网页描述 -->
+  <meta name="description"
+    content="SerialGen is a novel two-stage personalized image generation framework. It achieves high text controllability and appearance consistency using a combination of image standardization and personalization stages." />
+
+  <!-- Open Graph (OG) 社交媒体标签 -->
+  <meta property="og:title" content="SerialGen: Personalized Image Generation Framework" />
+  <meta property="og:description"
+    content="Discover SerialGen, a breakthrough two-stage method for personalized text-to-image generation with superior text controllability and consistent appearance." />
+  <meta property="og:url" content="https://rich-sz.github.io/SerialGen/" />
+  <meta property="og:image" content="static/image/serialgen_banner.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <!-- Twitter Meta 标签 -->
+  <meta name="twitter:title" content="SerialGen: Personalized Image Generation Framework" />
+  <meta name="twitter:description"
+    content="Explore SerialGen, a novel method for achieving personalized image generation with outstanding appearance consistency." />
+  <meta name="twitter:image" content="static/image/serialgen_twitter_banner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- SEO关键词 -->
+  <meta name="keywords"
+    content="SerialGen, Consistency in overall appearance, Ensure text controllability, Only one reference image required, Tuning free, personalized image generation, text-to-image, appearance consistency, image standardization, AI, diffusion models" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <title>SerialGen</title>
+  <link rel="icon" type="image/png" href="static/images/ico.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-2 publication-title">SerialGen: Personalized Image Generation by First Standardization
+              Then Personalization</h1>
+
+            <div class="is-size-5 publication-authors">
+
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Cong Xie</a><sup>*</sup>,</span>
+
+              <span class="author-block">
+                <a target="_blank">Han Zou</a><sup>*</sup>,</span>
+
+              <span class="author-block">
+                <a target="_blank">Ruiqi Yu</a>,</span>
+
+              <span class="author-block">
+                <a target="_blank">Yan Zhang</a>,</span>
+
+              <span class="author-block">
+                <a target="_blank">Zhenpeng Zhan</a></span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Baidu Inc.<br></span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2412.01485" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv" style="color: red;"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- huggingface link -->
+              <span class="link-block">
+                <a target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face"
+                      style="width: 20px; height: 20px;" />
+                  </span>
+                  <span>huggingface (Comming Soon)</span>
+                </a>
+              </span>
+
+              <!-- Github link -->
+              <!-- <span class="link-block">
+                <a target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github" style="color: DodgerBlue;"></i>
+                  </span>
+                  <span>Code Coming soon</span>
+                </a>
+              </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-8 has-text-centered">
+          <!-- 关键字项 -->
+          <div class="tags are-medium is-centered">
+            <span class="tag is-success">
+              <i class="fas fa-check-circle mr-2"></i>Consistency in overall appearance
+            </span>
+            <span class="tag is-info">
+              <i class="fas fa-sliders-h mr-2"></i>Ensure text controllability
+            </span>
+            <span class="tag is-warning">
+              <i class="fas fa-image mr-2"></i>Only one reference image required
+            </span>
+            <span class="tag is-danger">
+              <i class="fas fa-cogs mr-2"></i>Tuning free
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End paper abstract -->
+
+
+  <!-- Image1 -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+
+        <img src="static/images/carousel1.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered is-size-6">
+          Serial images generated by SerialGen. Our method can produce personalized images that faithfully recover the
+          reference image’s overall appearance while accurately responding to a wide range of text prompts.
+        </h2>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- End image  -->
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop" style="transform: scale(1.08); transform-origin: center;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame2.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame3.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame4.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame5.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame6.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame7.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/frame8.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+  <!-- Image2 -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+
+        <img src="static/images/carousel4.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered is-size-6">
+          More serial images generated by SerialGen, showcasing its outstanding ability to maintain overall appearance
+          consistency across
+          different types of characters, including non-human subjects.
+        </h2>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- End image  -->
+
+  <!-- Paper abstract -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In this work, we are interested in achieving both high text controllability and overall appearance
+              consistency in the generation of personalized human characters. We propose a novel framework, named
+              SerialGen, which is a serial generation method consisting of two stages: first, a standardization stage
+              that standardizes reference images, and then a personalized generation stage based on the standardized
+              reference. Furthermore, we introduce two modules aimed at enhancing the standardization process. Our
+              experimental results validate the proposed framework's ability to produce personalized images that
+              faithfully recover the reference image's overall appearance while accurately responding to a wide range of
+              text prompts. Through thorough analysis, we highlight the critical contribution of the proposed serial
+              generation method and standardization model, evidencing enhancements in appearance consistency between
+              reference and output images and across serial outputs generated from diverse text prompts. The term
+              "Serial" in this work carries a double meaning: it refers to the two-stage method and also underlines our
+              ability to generate serial images with consistent appearance throughout. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Image2 -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+
+        <!-- Your image here -->
+        <img src="static/images/carousel3.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered is-size-6">
+          Overview of the proposed SerialGen with two stages: (1) Standardization – training a standardization model on
+          synthetic data,
+          and (2) Personalization – using the standardization model to create (standardized reference, target) pairs for
+          personalized text-to-image
+          model training. During inference, once a reference image is standardized, serial images can be generated based
+          on different text prompts.
+        </h2>
+
+      </div>
+    </div>
+  </section>
+  <!-- End image  -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{xie2024serialgenpersonalizedimagegeneration,
+        title={SerialGen: Personalized Image Generation by First Standardization Then Personalization}, 
+        author={Cong Xie and Han Zou and Ruiqi Yu and Yan Zhang and Zhenpeng Zhan},
+        year={2024},
+        eprint={2412.01485},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2412.01485}, 
+  }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+  <!-- Default Statcounter code for SerialGen https://serialgen.github.io/ -->
+  <script type="text/javascript">
+    var sc_project = 13064708;
+    var sc_invisible = 1;
+    var sc_security = "b67deaed"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics Made Easy -
+    Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+          src="https://c.statcounter.com/13064708/0/b67deaed/1/" alt="Web Analytics Made Easy - Statcounter"
+          referrerPolicy="no-referrer-when-downgrade"></a></div>
+  </noscript>
+
+
+</body>
+
+</html>
